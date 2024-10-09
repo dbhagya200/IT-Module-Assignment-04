@@ -3,108 +3,134 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Assignment-04-case-06</title>
     <style>
-        body {
+        body{
             margin: 0;
-            padding: 0;
-            overflow: hidden;
+            
+        }
+        .container{
             width: 100%;
-
-
-        }
-        .sky img{
-            width: 100%;
-            height: 100%;
-            position: fixed;
-        }
-        .road img{
-            width: 100%;
-            height: 30%;
-            bottom: 0%;
-        }
-
-        .city img{
-            width: 100%;
-            height: 40%;
-            bottom: 30%;
-        }
-        .car img{
-            width: 25%;
-            height: 20%;
-            bottom: 20%;
-            left: 40%;
-            object-fit: cover;
-        }
-        .car {
+            height: 100vh;
+            background-image: url(/image/Car_Animation_Img/sky.jpg);
+            background-size: cover;
+            background-position: center;
             position: relative;
-            left: 40%;
+            overflow-x: hidden;
         }
 
-        .wheel1 img{
-            width: 5.2%;
-            height: 11%;
-            bottom: 19%;
-            left: 41.7%;
-            object-fit: cover;
-        }
-
-        .wheel2 img{
-            width: 5.2%;
-            height: 11%;
-            bottom: 19%;
-            left: 56.9%;
-            object-fit: cover;
-        }
-        .main {
-            position: relative;
-            width: 100%;
-            height: 100%;
-        }
-        .city & #road {
+        .road{
+            width: 500%;
+            height: 200px;
+            display: block;
+            background-image: url(/image/Car_Animation_Img/road.jpg);
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            z-index: 1;
             background-repeat: repeat-x;
-            animation: lefr-go 5s linear infinite;
+            animation: road 5s linear infinite;
+
         }
-        @keyframes left-go {
-            100% {
-                transform: translate(-3400px);
+
+        @keyframes road{
+            100%{
+                transform: translateX(-2000px);
+            }
+        }
+
+        .city{
+            width: 500%;
+            height: 250px;
+            display: block;
+            background-image: url(/image/Car_Animation_Img/city.png);
+            position: absolute;
+            bottom:200px;
+            left: 0;
+            right: 0;
+            z-index: 1;
+            background-repeat: repeat-x;
+            animation: city 20s linear infinite;
+        }
+
+        @keyframes city{
+            100%{
+                transform: translateX(-2000px);
+            }
+        }
+
+        .car{
+            width: 400px;
+            left: 50%;
+            bottom: 100px;
+            transform: translateX(-50%);
+            position: absolute;
+            z-index: 2;
+            img{
+                width: 100%;
+            }
+        }
+
+        .wheel{
+            left: 50%;
+            bottom: 178px;
+            transform: translateX(-50%);
+            position: absolute;
+            z-index: 2;
+            
+            img{
+                width: 76px;
+                height: 76px;
+                animation: wheel 8s linear infinite;
             }
             
         }
+        @keyframes wheel {
+            0%{
+                transform: rotate(0deg);
+            }
 
+            40%{
+                transform: rotate(-360deg);
+            }
+            90%{
+                transform: rotate(0deg);
+            }
+
+            100%{
+                transform: rotate(0deg);
+            }
+            
+            
+        }
+        #back{
+            left: -167px;
+            top: -5px;
+            position: absolute;
+        }
+
+        #front{
+            left: 78px;
+            top: -5px;
+            position: absolute;
+        }
     </style>
 </head>
 <body>
     <div class="container">
-        <div class="sky">
-            <img src="/image/Car_Animation_Img/sky.jpg" alt="">
+        <div class="road"></div>
+        <div class="city"></div>
 
-            <div class="main">
-                <div class="city">
-                    <img src="/image/Car_Animation_Img/city.png" alt="">
-                </div>
-    
-                <div class="road">
-                    <img src="/image/Car_Animation_Img/road.jpg" id="road" alt="">
-                    <div class="car">
-                        <img src="/image/Car_Animation_Img/car.png" alt="">
-    
-                        <div class="wheel1">
-                            <img src="/image/Car_Animation_Img/wheel.png" alt="">
-                        </div>
-                        <div class="wheel2">
-                            <img src="/image/Car_Animation_Img/wheel.png" alt="">
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            
-
+        <div class="car">
+            <img src="/image/Car_Animation_Img/car.png" alt="">
         </div>
 
-       
-
+        <div class="wheel">
+            <img src="/image/Car_Animation_Img/wheel.png" id="back" alt="">
+            <img src="/image/Car_Animation_Img/wheel.png" id="front" alt="">
+        </div>
     </div>
+    
 </body>
 </html>
