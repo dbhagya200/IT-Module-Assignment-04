@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            width: 100%;
+
+
+        }
+        .sky img{
+            width: 100%;
+            height: 100%;
+            position: fixed;
+        }
+        .road img{
+            width: 100%;
+            height: 30%;
+            bottom: 0%;
+        }
+
+        .city img{
+            width: 100%;
+            height: 40%;
+            bottom: 30%;
+        }
+        .car img{
+            width: 25%;
+            height: 20%;
+            bottom: 20%;
+            left: 40%;
+            object-fit: cover;
+        }
+        .car {
+            position: relative;
+            left: 40%;
+        }
+
+        .wheel1 img{
+            width: 5.2%;
+            height: 11%;
+            bottom: 19%;
+            left: 41.7%;
+            object-fit: cover;
+        }
+
+        .wheel2 img{
+            width: 5.2%;
+            height: 11%;
+            bottom: 19%;
+            left: 56.9%;
+            object-fit: cover;
+        }
+        .main {
+            position: relative;
+            width: 100%;
+            height: 100%;
+        }
+        .city & #road {
+            background-repeat: repeat-x;
+            animation: lefr-go 5s linear infinite;
+        }
+        @keyframes left-go {
+            100% {
+                transform: translate(-3400px);
+            }
+            
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="sky">
+            <img src="/image/Car_Animation_Img/sky.jpg" alt="">
+
+            <div class="main">
+                <div class="city">
+                    <img src="/image/Car_Animation_Img/city.png" alt="">
+                </div>
+    
+                <div class="road">
+                    <img src="/image/Car_Animation_Img/road.jpg" id="road" alt="">
+                    <div class="car">
+                        <img src="/image/Car_Animation_Img/car.png" alt="">
+    
+                        <div class="wheel1">
+                            <img src="/image/Car_Animation_Img/wheel.png" alt="">
+                        </div>
+                        <div class="wheel2">
+                            <img src="/image/Car_Animation_Img/wheel.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            
+
+        </div>
+
+       
+
+    </div>
+</body>
+</html>

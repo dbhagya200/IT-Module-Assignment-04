@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment-04-case-01</title>
+    <style>
+        body {
+            margin: 0;
+           
+        }
+
+        .content {
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            
+        }
+        .bar{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            width: 45px;
+            height: 50px;
+            background-color:blueviolet;
+            box-shadow: 0 10px 10px gray;
+           
+            p{
+                font-size: 0;
+            }
+            img{
+                object-fit: cover;
+                width: 35px;
+                height: 35px;
+                margin: 0;
+                padding: 5px;
+                
+            }
+
+            
+        }
+        .bar:hover{
+            width: 200px;
+            p{
+                font-size: 16px;
+                color: white;
+                transition-duration: 1.5s;
+                /* transition-timing-function:step-start; */
+            }
+        }
+        .bar:hover img{
+            object-fit: contain;
+        }
+        .bar{
+            width: 45px;
+            transition: all 1.5s ease-in-out;
+        }
+    </style>
+</head>
+<body>
+    <div class="content">
+        <div class="bar">
+            <p>Menu One</p>
+            <img src="/image/contact.png" alt="">
+            </div>
+        <div class="bar">
+            <p>Menu Two</p>
+            <img src="/image/ambulance.png" alt="">
+        </div>
+            
+        <div class="bar">
+            <p>Menu Three</p>
+        <img src="/image/global.png" alt="">
+        </div>
+        <div class="bar">
+            <p>Menu Four</p>
+            <img src="/image/doc.png" alt="">
+        </div>
+        <div class="bar">
+            <p>Menu Five</p>
+            <img src="/image/cart.png" alt="">
+        </div>
+    </div>
+</body>
+</html>

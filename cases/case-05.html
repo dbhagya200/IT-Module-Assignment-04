@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment-04-case-05</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+
+        }
+        .content {
+            width: 100%;
+            height: 100vh;
+            overflow: hidden;
+        }
+        figure {
+            position: relative;
+            left: -300%;
+            margin: 0;
+            width: 400%;
+            animation: slide 20s linear infinite;
+        }
+        @keyframes slide {
+            0% {
+                left: -300%;
+            }
+            10%{
+                left: -300%;
+            }
+            16%{
+                left: -200%;
+            }
+            26%{
+                left: -200%;
+            }
+            32%{
+                left: -100%;
+            }
+            42%{
+                left: -100%;
+            }
+            48%{
+                left: 0%;
+            }
+            58%{
+                left: 0%;
+            }
+            64%{
+                left: -100%;
+            }
+            74%{
+                left: -100%;
+            }
+            80%{
+                left: -200%;
+            }
+            90%{
+                left: -200%;
+            }
+            96%{
+                left: -300%;
+            }
+            100%{
+                left: -300%;
+            }
+            
+        }
+        .wallpaper {
+            position: relative;
+            width: 25%;
+            height: 100%;
+            float: left;
+        }
+
+        .wallpaper img {
+            left: 0%;
+            width: 100%;
+            height: 100vh;
+            object-fit: cover;
+        }
+    </style>
+</head>
+<body>
+    <div class="content">
+        <figure>
+        <div class="wallpaper">
+            <img src="/image/nature.jpeg" alt="">
+        </div>
+
+        <div class="wallpaper">
+            <img src="/image/Space Aesthetic Wallpaper Concept.jpeg" alt="">
+        </div>
+
+        <div class="wallpaper">
+            <img src="/image/𝒞𝑜𝒻𝒻𝑒 𝓈𝒽𝑜𝓅 𝓈𝓊𝓃𝓈𝑒𝓉.jpeg" alt="">
+        </div>
+
+        <div class="wallpaper">
+            <img src="/image/road.jpeg" alt="">
+        </div>
+    </figure>
+    </div>
+</body>
+</html>
+

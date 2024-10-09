@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment-04-case-02</title>
+    <style>
+        body {
+            margin: 0;
+            background-color: lightseagreen;
+            width: 100vw;
+            height: 100vh;
+           
+        }
+
+        .content {
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .big-circle {
+            width: 300px;
+            height: 300px;
+            border-radius: 50%;
+            background-color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /* background:conic-gradient(red 0deg, red 45deg, white 45deg, white 315deg,red 315deg); */
+            
+            
+        }
+
+        .small-circle {
+            /* width: 150px;
+            height: 150px;
+            border-top-right-radius: 145%;
+            rotate: -46deg;
+            background-color: darkred;
+            position: relative;
+            left: 60%;
+            top: -11%;
+            transform: translate(-50%, -50%); */
+            /* width: 150px;
+            height: 150px;
+            border-top-right-radius: 145%;
+            rotate: -46deg;
+            position: relative;
+            top: -36%;
+            left: 0%; */
+
+            width: 300px;
+            height: 300px;
+            border-top-right-radius: 50%;
+            position: relative;
+            left: 50%;
+            top: 50%;
+            opacity:calc(0.1);
+            transform: translate(-50%, -50%);
+
+            background-color: red;
+        }
+        .small-circle1 {
+            width: 270px;
+            height: 270px;
+            border-radius: 50%;
+            background-color: gray;
+            position: fixed;
+            /* left: -1%;
+            top: 99%; */
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            p{
+            
+                color: white;
+                font-size: 40px;
+                font-weight: bold;
+            }
+        }
+        .small-circle1:hover {
+            cursor:pointer;
+
+        }
+        .big-circle:hover {
+            cursor:pointer;
+            .small-circle{
+            cursor:pointer;
+            transition-property: all;
+            transition-duration: 2s;
+            transition-timing-function: ease-in-out;
+
+            }
+            
+        }
+        /* .big-circle:hover {
+            cursor:pointer;
+            background:conic-gradient(white 0deg,white 45deg, red 45deg, red 315deg, red 315deg,white 315deg);
+            transition: all;
+            transition-duration: 10s;
+            transition-timing-function: ease-in-out;
+
+        } */
+    </style>
+</head>
+<body>
+    <div class="content">
+        <div class="big-circle">
+            <div class="small-circle">
+               
+            </div>
+            <div class="small-circle1">
+                <p>RWAD</p>
+            </div>
+            
+            
+        </div>
+    </div>
+</body>
+</html>
