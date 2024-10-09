@@ -1,0 +1,76 @@
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+.container {
+    width: 80vw;
+    height: 100vh;
+    margin-left: 150px;
+    padding-top: 20px;
+}
+.box {
+    position: relative;
+    width: 150px;
+    height: 100px;
+    background-color: red;
+    border-radius: 10%;
+    animation: square 10s linear infinite;
+}
+@keyframes square {
+    0% {
+        left: 0%;
+        top: 0;
+        transform: rotate(0);
+        background-color: blue;
+    }
+    15% {
+        left: calc(80% - 150px);
+        top: 0%;
+        transform: rotate(180deg);
+        background-color: yellow;
+    }
+    25% {
+        left: calc(80% - 150px);
+        top: calc(100% - 150px);
+        transform: rotate(360deg);
+        background-color: red;
+    }
+    
+    38% {
+        left: 0%;
+        top: calc(100% - 150px);
+        transform: rotate(180deg);
+        background-color:palevioletred;
+    }
+    50% {
+        left: 0%;
+        top: 0%;
+        transform: rotate(0);
+        background-color: orange;
+    }
+    62% {
+        left: 0%;
+        top: calc(100% - 150px);
+        transform: rotate(180deg);
+        background-color:palevioletred;
+    }
+    75% {
+        left: calc(80% - 150px);
+        top: calc(100% - 150px);
+        transform: rotate(360deg);
+        background-color: red;
+    }
+    85% {
+        left: calc(80% - 150px);
+        top: 0%;
+        transform: rotate(180deg);
+        background-color:yellow;
+    }
+    100% {
+        left: 0%;
+        top: 0%;
+        transform: rotate(0);
+        background-color: blue;
+    }
+}
