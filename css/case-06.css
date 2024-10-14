@@ -13,7 +13,7 @@ body{
 }
 
 .road{
-    width: 500%;
+    width: 1000%;
     height: 200px;
     display: block;
     background-image: url(/image/Car_Animation_Img/road.jpg);
@@ -23,14 +23,29 @@ body{
     right: 0;
     z-index: 1;
     background-repeat: repeat-x;
-    animation: road 5s linear infinite;
+    /* animation: road 5s linear infinite; */
+    
 
+}
+.full{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 1000%;
+    height: 70%;
+    animation: road 8s cubic-bezier(0.075, 0.82, 0.165, 1) 0s infinite;
 }
 
 @keyframes road{
-    100%{
+    /* 100%{
         transform: translateX(-2000px);
-    }
+    } */
+    0% {
+        transform: translateX(0);
+      }
+      100% {
+        transform: translateX(-90%);
+      }
 }
 
 .city{
@@ -51,6 +66,7 @@ body{
     100%{
         transform: translateX(-2000px);
     }
+    
 }
 
 .car{
@@ -94,6 +110,7 @@ body{
     100%{
         transform: rotate(0deg);
     }
+    
     
     
 }

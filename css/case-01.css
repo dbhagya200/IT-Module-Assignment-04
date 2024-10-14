@@ -26,10 +26,12 @@
     color: white;
     font-weight: bold;
 }
-.content>div>img{
+.content>div>i{
     position: absolute;
     right: 10px;
-    font-size: 28px;
+    margin-top: 30px;
+    /* font-size: 28px; */
+    
 
     object-fit: cover;
         width: 35px;
